@@ -18,7 +18,7 @@ public class LocateCenterHorizontalView extends RecyclerView {
     /**
      * 一个屏幕中显示多少个item，必须为奇数
      */
-    private int itemCount = 5;
+    private int itemCount = 7;
     /**
      * 初始时选中的位置
      */
@@ -236,8 +236,8 @@ public class LocateCenterHorizontalView extends RecyclerView {
     }
 
     public void moveToPosition(int position) {
-        if(position < 0 || position > adapter.getItemCount() - 1){
-            throw new IllegalArgumentException("Your position should be from 0 to "+(adapter.getItemCount()-1));
+        if (position < 0 || position > adapter.getItemCount() - 1) {
+            throw new IllegalArgumentException("Your position should be from 0 to " + (adapter.getItemCount() - 1));
         }
         oldMoveX = 0;
         isMoveFinished = false;
@@ -281,10 +281,10 @@ public class LocateCenterHorizontalView extends RecyclerView {
     private void calculateSelectedPos() {
         int itemWidth = wrapAdapter.getItemWidth();
 
-        int bufDeltaX = - deltaX;
-        if (deltaX > 0&&itemWidth>0) {
+        int bufDeltaX = -deltaX;
+        if (deltaX > 0 && itemWidth > 0) {
             selectPos = (bufDeltaX) / itemWidth + initPos;
-        } else if(itemWidth>0){
+        } else if (itemWidth > 0) {
             selectPos = initPos + (bufDeltaX) / itemWidth;
         }
     }
@@ -312,7 +312,7 @@ public class LocateCenterHorizontalView extends RecyclerView {
             if (adapter instanceof IAutoLocateHorizontalView) {
                 itemView = ((IAutoLocateHorizontalView) adapter).getItemView();
             } else {
-                throw new RuntimeException(adapter.getClass().getSimpleName() + " should implements com.jianglei.view.AutoLocateHorizontalView.IAutoLocateHorizontalView !");
+                throw new RuntimeException(adapter.getClass().getSimpleName() + " should implements AutoLocateHorizontalView.IAutoLocateHorizontalView !");
             }
         }
 
@@ -332,7 +332,7 @@ public class LocateCenterHorizontalView extends RecyclerView {
             if (params != null) {
                 params.width = width;
                 itemWidth = width;
-                params.height=width;
+                params.height = width;
                 itemView.setLayoutParams(params);
             }
             return holder;
