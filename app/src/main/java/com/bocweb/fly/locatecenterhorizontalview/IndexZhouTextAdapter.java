@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.bocweb.fly.locatecenterhorizontalview.view.LocateCenterHorizontalView;
 
-import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
@@ -23,13 +22,10 @@ public class IndexZhouTextAdapter extends RecyclerView.Adapter<IndexZhouTextAdap
     private Context mContext;
     private View mView;
     private List<ContinentModel> mDatas;
-    private int circle;
 
-
-    public IndexZhouTextAdapter(Context context, List<ContinentModel> datas, int circle) {
+    public IndexZhouTextAdapter(Context context, List<ContinentModel> datas) {
         this.mContext = context;
         this.mDatas = datas;
-        this.circle = circle;
     }
 
     @Override
@@ -46,7 +42,14 @@ public class IndexZhouTextAdapter extends RecyclerView.Adapter<IndexZhouTextAdap
         holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EventBus.getDefault().post(new ZhouTextClickEvent(position));
+                if (null != onItemClickListner) {
+                            if (null != mDatas) {
+                                //解决列表为list  底部为自定义bottom条目添加问题呢
+                                if (position != mDatas.size()) {
+                                    onItemClickListner.onItemClickListner(v, mDatas.get(position), position);
+                                }
+                            }
+                }
             }
         });
     }
@@ -56,7 +59,7 @@ public class IndexZhouTextAdapter extends RecyclerView.Adapter<IndexZhouTextAdap
         if (mDatas == null) {
             return 0;
         }
-        return mDatas.size() * circle;
+        return mDatas.size();
     }
 
     @Override
@@ -79,7 +82,7 @@ public class IndexZhouTextAdapter extends RecyclerView.Adapter<IndexZhouTextAdap
         }
     }
 
-    static class AgeViewHolder extends RecyclerView.ViewHolder {
+    class AgeViewHolder extends RecyclerView.ViewHolder {
         TextView name;
 
         AgeViewHolder(View itemView) {
@@ -87,4 +90,14 @@ public class IndexZhouTextAdapter extends RecyclerView.Adapter<IndexZhouTextAdap
             name = itemView.findViewById(R.id.name);
         }
     }
+
+    private OnItemClickListner onItemClickListner;//单击事件
+    public void setOnItemClickListner(OnItemClickListner onItemClickListner) {
+        this.onItemClickListner = onItemClickListner;
+    }
+
+    public interface OnItemClickListner {
+        void onItemClickListner(View v, ContinentModel data, int position);
+    }
+
 }

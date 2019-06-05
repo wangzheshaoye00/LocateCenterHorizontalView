@@ -244,7 +244,7 @@ public class LocateCenterHorizontalView extends RecyclerView {
         int itemWidth = wrapAdapter.getItemWidth();
         if (position != selectPos) {
             int deltx = (position - selectPos) * itemWidth;
-            mScroller.startScroll(getScrollX(), getScrollY(), deltx, 0);
+            mScroller.startScroll(getScrollX(), getScrollY(), -deltx, 0);
             postInvalidate();
         }
     }
@@ -280,10 +280,12 @@ public class LocateCenterHorizontalView extends RecyclerView {
 
     private void calculateSelectedPos() {
         int itemWidth = wrapAdapter.getItemWidth();
+
+        int bufDeltaX = - deltaX;
         if (deltaX > 0&&itemWidth>0) {
-            selectPos = (deltaX) / itemWidth + initPos;
+            selectPos = (bufDeltaX) / itemWidth + initPos;
         } else if(itemWidth>0){
-            selectPos = initPos + (deltaX) / itemWidth;
+            selectPos = initPos + (bufDeltaX) / itemWidth;
         }
     }
 
