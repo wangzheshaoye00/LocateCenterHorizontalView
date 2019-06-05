@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_activity);
         zhouText = findViewById(R.id.zhouText);
         initZhouText();
-        initData();
+        addData();
     }
 
     private void initZhouText() {
@@ -51,17 +51,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void initData() {
-        list.add(new ContinentModel(0, "第一天", "1"));
-        list.add(new ContinentModel(1, "第二天", "2"));
-        list.add(new ContinentModel(2, "第三天", "3"));
-        list.add(new ContinentModel(3, "第四天", "4"));
-        list.add(new ContinentModel(4, "第五天", "5"));
-        list.add(new ContinentModel(5, "第六天", "6"));
-        list.add(new ContinentModel(6, "第七天", "7"));
-        list.add(new ContinentModel(7, "第八天", "8"));
-        list.add(new ContinentModel(8, "第九天", "9"));
-        list.add(new ContinentModel(9, "第十天", "10"));
+    private void addData() {
+        int size = list.size();
+        for (int i = size; i < size + 10; i++) {
+            list.add(new ContinentModel(size, "第" + (i + 1) + "天", i + 1 + ""));
+        }
         zhouTextAdapter.notifyDataSetChanged();
+    }
+
+    public void btClick(View view) {
+        addData();
     }
 }
