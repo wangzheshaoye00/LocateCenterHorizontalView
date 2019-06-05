@@ -17,8 +17,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     LocateCenterHorizontalView zhouText;
-    List<ContinentModel> list = new ArrayList<>();;
+    List<ContinentModel> list = new ArrayList<>();
+    ;
     IndexZhouTextAdapter zhouTextAdapter;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

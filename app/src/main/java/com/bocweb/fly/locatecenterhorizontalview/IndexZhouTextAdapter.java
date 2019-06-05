@@ -43,12 +43,12 @@ public class IndexZhouTextAdapter extends RecyclerView.Adapter<IndexZhouTextAdap
             @Override
             public void onClick(View v) {
                 if (null != onItemClickListner) {
-                            if (null != mDatas) {
-                                //解决列表为list  底部为自定义bottom条目添加问题呢
-                                if (position != mDatas.size()) {
-                                    onItemClickListner.onItemClickListner(v, mDatas.get(position), position);
-                                }
-                            }
+                    if (null != mDatas) {
+                        //解决列表为list  底部为自定义bottom条目添加问题呢
+                        if (position != mDatas.size()) {
+                            onItemClickListner.onItemClickListner(v, mDatas.get(position), position);
+                        }
+                    }
                 }
             }
         });
@@ -92,6 +92,7 @@ public class IndexZhouTextAdapter extends RecyclerView.Adapter<IndexZhouTextAdap
     }
 
     private OnItemClickListner onItemClickListner;//单击事件
+
     public void setOnItemClickListner(OnItemClickListner onItemClickListner) {
         this.onItemClickListner = onItemClickListner;
     }
