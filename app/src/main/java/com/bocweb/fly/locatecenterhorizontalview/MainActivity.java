@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
         zhouText = findViewById(R.id.zhouText);
-        initData();
         initZhouText();
+        initData();
     }
 
     private void initZhouText() {
@@ -62,5 +62,6 @@ public class MainActivity extends AppCompatActivity {
         list.add(new ContinentModel(7, "第八天", "8"));
         list.add(new ContinentModel(8, "第九天", "9"));
         list.add(new ContinentModel(9, "第十天", "10"));
+        zhouTextAdapter.notifyDataSetChanged();
     }
 }
