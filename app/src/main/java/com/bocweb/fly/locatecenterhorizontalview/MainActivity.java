@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.bocweb.fly.locatecenterhorizontalview.view.LocateCenterHorizontalView;
 
@@ -17,9 +18,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     LocateCenterHorizontalView zhouText;
-    List<ContinentModel> list = new ArrayList<>();
-    ;
+    List<RankingHistoryEntity> list = new ArrayList<>();
+
     IndexZhouTextAdapter zhouTextAdapter;
+    private int mScreenWidth;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,9 +33,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initZhouText() {
+        mScreenWidth = Utils.getWindowWidth(this);
         zhouText.setHasFixedSize(true);
+//        int recyclerViewHeight = Utils.dp2px(this, 300);
+        int recyclerViewHeight = mScreenWidth * 638 / 1080;
+        ViewGroup.LayoutParams layoutParams = zhouText.getLayoutParams();
+        layoutParams.height = recyclerViewHeight;
+        zhouText.setLayoutParams(layoutParams);
+
         zhouText.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true));
-        zhouTextAdapter = new IndexZhouTextAdapter(this, list);
+
+        zhouTextAdapter = new IndexZhouTextAdapter(this, list).setRecyclerViewHeight(recyclerViewHeight);
+
         zhouText.setAdapter(zhouTextAdapter);
         zhouText.setOnSelectedPositionChangedListener(new LocateCenterHorizontalView.OnSelectedPositionChangedListener() {
             @Override
@@ -45,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         });
         zhouTextAdapter.setOnItemClickListner(new IndexZhouTextAdapter.OnItemClickListner() {
             @Override
-            public void onItemClickListner(View v, ContinentModel data, int position) {
+            public void onItemClickListner(View v, RankingHistoryEntity data, int position) {
                 zhouText.moveToPosition(position);
             }
         });
@@ -56,7 +67,11 @@ public class MainActivity extends AppCompatActivity {
     private void addData() {
         int size = list.size();
         for (int i = size; i < size + 10; i++) {
-            list.add(new ContinentModel(size, "第" + (i + 1) + "天", i + 1 + ""));
+            int stepCount = (i + 1) * 1000;
+            if (stepCount > 18000) {
+                stepCount = (int) (18000 * Math.random());
+            }
+            list.add(new RankingHistoryEntity(stepCount, "第" + (i + 1) + "天"));
         }
         zhouTextAdapter.notifyDataSetChanged();
     }

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_tab_text_size">15sp</dimen>
+
+    <dimen name="main_title_text_size">24sp</dimen>
+    <dimen name="main_action_label_text_size">20sp</dimen>
+
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="default_radius">8px</dimen>
+
+    <dimen name="register_input_bar_height">70dp</dimen>
+
+    <dimen name="activity_content_padding_top">14dp</dimen>
+    <dimen name="unread_count_text_size">10sp</dimen>
+
+    <!-- taogu common list begin -->
+
+    <dimen name="list_item_height">72dip</dimen>
+    <dimen name="list_item_padding_top_bottom">8dip</dimen>
+    <dimen name="list_item_padding_left_right">14dip</dimen>
+    <dimen name="list_item_avatar_width">50dip</dimen>
+    <dimen name="list_item_avatar_margin_right">26dip</dimen>
+    <!-- taogu common list end -->
+    <!-- 大图页 -->
+    <dimen name="photo_detail_progress_w">240dp</dimen>
+    <dimen name="photo_detail_progress_margin_t">320dp</dimen>
+    <dimen name="photo_detail_txt_progress_margin_t">300dp</dimen>
+    <dimen name="photo_detail_but_text_size">12sp</dimen>
+    <!-- bottom bar -->
+     <dimen name="tipcnt_margin_left">11dip</dimen>
+     <dimen name="tipcnt_padding">3dip</dimen>
+     <dimen name="tipcnt_width_height">20dip</dimen>
+
+    <dimen name="loading_thumb_margin_top">97dp</dimen>
+    <dimen name="loading_copyright_margin_bottom">25dp</dimen>
+
+    <!-- 添加就诊人 性别RadioButton drawablePaddingLeft -->
+    <dimen name="add_registration_radiobutton_padding_left">12dp</dimen>
+
+    <!-- SmartTabLayout -->
+    <dimen name="product_tab_padding_left_right">6dp</dimen>
+
+    <dimen name="common_dialog_bg_round">10dp</dimen>
+    <dimen name="common_round_px">6px</dimen>
+
+    <dimen name="common_font_size_large">20sp</dimen>
+    <dimen name="common_font_size_normal">18sp</dimen>
+    <dimen name="common_font_size_small">16sp</dimen>
+    <dimen name="common_font_size_mini">14sp</dimen>
+    <dimen name="common_font_size_minier">12sp</dimen>
+    <dimen name="common_font_size_larger">24sp</dimen>
+    <dimen name="common_font_size_sp_25">25sp</dimen>
+    <dimen name="common_font_size_sp_12">12sp</dimen>
+    <dimen name="common_font_size_sp_28">28sp</dimen>
+    <dimen name="common_font_size_sp_20">20sp</dimen>
+
+    <dimen name="pattern_lock_path_width">1dp</dimen>
+    <dimen name="pattern_lock_dot_size">22dp</dimen>
+    <dimen name="pattern_lock_dot_selected_size">30dp</dimen>
+    <dimen name="pattern_lock_dot_circle_size">63dp</dimen>
+
+    <dimen name="span_line_height">1px</dimen>
+
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_9">9dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_13">13dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_17">17dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_19">19dp</dimen>
+    <dimen name="dimen_20">20dip</dimen>
+    <dimen name="dimen_21">21dip</dimen>
+    <dimen name="dimen_22">22dip</dimen>
+    <dimen name="dimen_23">23dip</dimen>
+    <dimen name="dimen_24">24dip</dimen>
+    <dimen name="dimen_25">25dip</dimen>
+    <dimen name="dimen_26">26dip</dimen>
+    <dimen name="dimen_27">27dip</dimen>
+    <dimen name="dimen_28">28dip</dimen>
+    <dimen name="dimen_29">29dip</dimen>
+    <dimen name="dimen_30">30dip</dimen>
+    <dimen name="dimen_31">31dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_33">33dp</dimen>
+    <dimen name="dimen_34">34dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_37">37dp</dimen>
+    <dimen name="dimen_38">38dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_41">41dp</dimen>
+    <dimen name="dimen_42">42dp</dimen>
+    <dimen name="dimen_43">43dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_46">46dp</dimen>
+    <dimen name="dimen_49">49dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_52">52dp</dimen>
+    <dimen name="dimen_53">53dp</dimen>
+    <dimen name="dimen_55">55dp</dimen>
+    <dimen name="dimen_56">56dp</dimen>
+    <dimen name="dimen_58">58dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_61">61dp</dimen>
+    <dimen name="dimen_63">63dp</dimen>
+    <dimen name="dimen_65">65dp</dimen>
+    <dimen name="dimen_67">67dp</dimen>
+    <dimen name="dimen_69">69dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_72">72dp</dimen>
+    <dimen name="dimen_73">73dp</dimen>
+    <dimen name="dimen_74">74dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_78">78dp</dimen>
+    <dimen name="dimen_82">82dp</dimen>
+    <dimen name="dimen_83">83dp</dimen>
+    <dimen name="dimen_84">84dp</dimen>
+    <dimen name="dimen_87">87dp</dimen>
+    <dimen name="dimen_89">89dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_93">93dp</dimen>
+    <dimen name="dimen_94">94dp</dimen>
+    <dimen name="dimen_95">95dp</dimen>
+    <dimen name="dimen_97">97dp</dimen>
+    <dimen name="dimen_99">99dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_102">102dp</dimen>
+    <dimen name="dimen_103">103dp</dimen>
+    <dimen name="dimen_105">105dp</dimen>
+    <dimen name="dimen_106">106dp</dimen>
+    <dimen name="dimen_111">111dp</dimen>
+    <dimen name="dimen_115">115dp</dimen>
+    <dimen name="dimen_114">114dp</dimen>
+    <dimen name="dimen_117">117dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_124">124dp</dimen>
+    <dimen name="dimen_126">126dp</dimen>
+    <dimen name="dimen_130">130dp</dimen>
+    <dimen name="dimen_132">132dp</dimen>
+    <dimen name="dimen_133">133dp</dimen>
+    <dimen name="dimen_148">148dp</dimen>
+    <dimen name="dimen_147">147dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_152">152dp</dimen>
+    <dimen name="dimen_155">155dp</dimen>
+    <dimen name="dimen_160">160dp</dimen>
+    <dimen name="dimen_163">163dp</dimen>
+    <dimen name="dimen_164">164dp</dimen>
+    <dimen name="dimen_165">165dp</dimen>
+    <dimen name="dimen_168">168dp</dimen>
+    <dimen name="dimen_169">169dp</dimen>
+    <dimen name="dimen_170">170dp</dimen>
+    <dimen name="dimen_171">171dp</dimen>
+    <dimen name="dimen_172">172dp</dimen>
+    <dimen name="dimen_173">173dp</dimen>
+    <dimen name="dimen_174">174dp</dimen>
+    <dimen name="dimen_175">175dp</dimen>
+    <dimen name="dimen_180">180dp</dimen>
+    <dimen name="dimen_189">189dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_210">210dp</dimen>
+    <dimen name="dimen_240">240dp</dimen>
+
+    <dimen name="font_size_9">9sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_11">11sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_13">13sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_17">17sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_19">19sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_77">77sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+    <dimen name="font_size_23">23sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_26">26sp</dimen>
+    <dimen name="font_size_30">30sp</dimen>
+    <dimen name="font_size_35">35sp</dimen>
+    <dimen name="font_size_38">38sp</dimen>
+    <dimen name="font_size_43">43sp</dimen>
+
+</resources>

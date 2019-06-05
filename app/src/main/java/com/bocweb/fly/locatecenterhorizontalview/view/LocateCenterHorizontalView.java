@@ -294,7 +294,6 @@ public class LocateCenterHorizontalView extends RecyclerView {
         private RecyclerView.Adapter adapter;
         private int itemCount;
         private static final int HEADER_FOOTER_TYPE = -1;
-        private View itemView;
         /**
          * 头部或尾部的宽度
          */
@@ -309,9 +308,7 @@ public class LocateCenterHorizontalView extends RecyclerView {
             this.adapter = adapter;
             this.context = context;
             this.itemCount = itemCount;
-            if (adapter instanceof IAutoLocateHorizontalView) {
-                itemView = ((IAutoLocateHorizontalView) adapter).getItemView();
-            } else {
+            if (!(adapter instanceof IAutoLocateHorizontalView)) {
                 throw new RuntimeException(adapter.getClass().getSimpleName() + " should implements AutoLocateHorizontalView.IAutoLocateHorizontalView !");
             }
         }
@@ -326,13 +323,14 @@ public class LocateCenterHorizontalView extends RecyclerView {
                 return new HeaderFooterViewHolder(view);
             }
             ViewHolder holder = adapter.onCreateViewHolder(parent, viewType);
-            itemView = ((IAutoLocateHorizontalView) adapter).getItemView();
+
+            View itemView = holder.itemView;
             int width = parent.getMeasuredWidth() / itemCount;
             ViewGroup.LayoutParams params = itemView.getLayoutParams();
             if (params != null) {
                 params.width = width;
                 itemWidth = width;
-                params.height = width;
+//                params.height = width;
                 itemView.setLayoutParams(params);
             }
             return holder;
@@ -393,10 +391,6 @@ public class LocateCenterHorizontalView extends RecyclerView {
 
 
     public interface IAutoLocateHorizontalView {
-        /**
-         * 获取item的根布局
-         */
-        View getItemView();
 
         /**
          * 当item被选中时会触发这个回调，可以修改被选中时的样式

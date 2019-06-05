@@ -1,6 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- common color elements begin -->
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="primary">#ff6600</color>
+    <color name="primary_bg_low">#ff7119</color>
+    <color name="primary_bg_large">#ef4916</color>
+    <color name="primary_bg_light">#FFF2E9</color>
+
+    <color name="primary_bg_bind_low">#FF7825</color>
+    <color name="primary_bg_bind_height">#F05222</color>
+    <color name="primary_dark">#000000</color>
+    <color name="primary_bg">#fff0e6</color>
+    <color name="accent">#f36163</color>
+    <color name="grey_dark">#101010</color>
+    <color name="primary_light">#c1e7e8</color>
+    <color name="black_dark">#333333</color>
+    <color name="black_title">#444444</color>
+    <color name="black_light">#666666</color>
+    <color name="gray_dark">#999999</color>
+    <color name="gray">#b7b7b7</color>
+    <color name="brown_content">#865303</color>
+    <color name="gray_light">#d9d9d9</color>
+    <color name="gray_other">#B0B0B0</color>
+    <color name="gray_low">#aeaeae</color>
+    <color name="gray_1">#777777</color>
+    <color name="white_dark">#f3f3f3</color>
+    <color name="white_light">#fafafa</color>
+    <color name="white_transparent">#70ffffff</color>
+    <color name="avatar_bg_transparent">#33000000</color>
+    <color name="tip_yellow">#fdeca6</color>
+    <color name="wallet_red_bg">#FF3C3C</color>
+    <!-- common color elements end -->
+
+    <!--新版分割线颜色-->
+    <color name="new_divider">#EEEEEE</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="line">#C9C9C9</color>
+    <color name="gray_fa">#FAFAFA</color>
+    <color name="bound">#C5C3C3</color>
+    <color name="gray_line">#dddddd</color>
+    <color name="gray_d8">#D8D8D8</color>
+
+    <color name="prompt_label_text_color">#9B9B9B</color>
+    <color name="prompt_hint_text_color">#DCDCDC</color>
+    <color name="home_title_background">@color/primary</color>
+    <color name="main_title_background">@color/white</color>
+    <color name="red_light">#ffff4444</color>
+    <color name="red_dark">#ffcc0000</color>
+    <color name="gray_disabled">@color/line</color>
+    <color name="pincode_background">#D8D8D8</color>
+    <color name="span_line_color">@color/new_divider</color>
+    <color name="msg_span_line_color">#93ba6b</color>
+    <color name="transparent">#00000000</color>
+    <color name="tab_bar_text_default_color">#999999</color>
+    <color name="tab_bar_text_hover_color">@color/primary</color>
+    <color name="default_bg">#f8f8f8</color>
+    <color name="pull_down_refresh_text_color">#b2b2b2</color>
+    <color name="list_item_hover_color">#f8f8f8</color>
+    <color name="sec_title_color">#5e5e5e</color>
+    <color name="red">#ff0000</color>
+    <color name="common_dialog_default_color">#272624</color>
+    <color name="text_enable_color">#ed3206</color>
+    <color name="search_color">#f9f9f9</color>
+    <color name="title_btn_hover">#dad7d7</color>
+    <color name="btn_click_pressed">#027533</color>
+    <color name="btn_bound_pressed">#d5d5d5</color>
+    <color name="register_pin_code_enable">#d8d8d8</color>
+    <color name="dialog_btn_normal_color">#f2f2f2</color>
+
+    <color name="round_btn_enable_color">#f2f2f2</color>
+    <color name="default_sec_color">#9b9b9b</color>
+    <color name="default_material_list_bg">#f6f6f6</color>
+
+    <color name="hint_color">#dcdcdc</color>
+
+    <color name="photo_detail_progress_bg">#dedede</color>
+    <color name="photo_detail_progress_color">#f5aa00</color>
+
+    <color name="list_item_major_label">#686868</color>
+
+    <color name="tab_normal_font_color">#686868</color>
+
+    <color name="login_tra_white">#686868</color>
+    <color name="title_prompt_bg_color">#ffd4d2</color>
+
+    <!-- dialog btn color -->
+    <color name="dialog_btn_color">@color/primary</color>
+
+    <!--share-->
+    <color name="share_view_bg">#50000000</color>
+    <color name="share_view_content_bg">#d5d5d5</color>
+
+    <color name="right_title_disenable">#c6c6c6</color>
+
+    <color name="half_transparent">#40000000</color>
+
+    <!-- issued -->
+    <color name="ejiabao_price_calc_yellow">#f5be00</color>
+    <color name="ejiabao_calc_price_cesuan">#0ec7a6</color>
+
+    <color name="confi_order_summary">#ff9b59</color>
+
+    <color name="confi_order_link">#55bae6</color>
+    <color name="confi_order_link_new">#508cee</color>
+
+    <color name="color_cccccc">#cccccc</color>
+
+    <color name="share_reward_see_text_color">#ffdbdb</color>
+    <color name="share_reward_open_text_color">#e74533</color>
+    <color name="share_reward_already_open">#fbdb30</color>
+
+    <color name="product_name_text_color">@color/black_dark</color>
+    <color name="payment_result_bg">#F8F9FB</color>
+
+    <color name="dialog_text_color">#027AFF</color>
+    <color name="prompt_text_color">@color/gray_dark</color>
+    <color name="product_limit_text_color">@color/gray_dark</color>
+    <color name="order_item_color">@color/black_light</color>
+
+
+    //会员体系色值
+    <color name="member_grade1_color">#EC6C15</color>
+
+    <color name="member_grade2_deep_color">#50607A</color>
+    <color name="member_grade2_color">#A9B2BE</color>
+
+    <color name="member_grade3_deep_color">#9A6208</color>
+    <color name="member_grade3_color">#C9924A</color>
+
+    <color name="member_grade4_deep_color">#6E4F54</color>
+    <color name="member_grade4_color">#C8B4A3</color>
+
+    <color name="member_grade5_deep_color">#F1DAC4</color>
+    <color name="member_grade5_color">#232131</color>
+
+    <color name="member_equity1">#FF952F</color>
+    <color name="member_equity2">#50607A</color>
+    <color name="member_equity3">#865303</color>
+    <color name="member_equity4">#A97F86</color>
+    <color name="member_equity5">#676477</color>
+
+    <color name="coupon_detail_bg1">#F04D16</color>
+    <color name="coupon_detail_bg2">#FE9219</color>
+
+
+
+    <color name="photo_title_bg">#BF000000</color>
 </resources>
